@@ -1,0 +1,46 @@
+@use 'styles/spacings';
+@use 'styles/breakpoints';
+@use 'styles/colors';
+
+.container {
+  display: flex;
+  height: 150px;
+  font-size: 1.6rem;
+
+  &.read {
+    background-color: colors.$light-gray;
+  }
+
+  @media (max-width: breakpoints.$media-m-tablet) {
+    height: 80px;
+  }
+}
+
+.image {
+  width: 40%;
+  object-fit: contain;
+
+  @media (max-width: breakpoints.$media-m-tablet) {
+    width: 100px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 spacings.$spacing-s;
+}
+
+.title {
+  line-height: 1.5em;  /* height is 2x line-height, so two lines will display */
+  overflow: hidden;
+  font-weight: bold;
+  margin-bottom: spacings.$spacing-s;
+}
+
+.author {
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+  margin-bottom: spacings.$spacing-s;
+}

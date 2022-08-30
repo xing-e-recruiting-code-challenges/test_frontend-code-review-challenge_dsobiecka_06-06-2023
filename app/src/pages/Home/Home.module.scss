@@ -1,0 +1,23 @@
+@use 'styles/breakpoints';
+@use 'styles/spacings';
+
+.listContainer {
+  flex: 1;
+  padding: spacings.$spacing-m;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 16px;
+
+  @media (min-width: breakpoints.$media-m-tablet) {
+    padding-right: spacings.$spacing-xxl;
+    margin-top: 0;
+  }
+}
+
+.articleDetails {
+  flex: 1;
+
+  @media (min-width: breakpoints.$media-m-tablet) {
+   flex: 2;
+  }
+}

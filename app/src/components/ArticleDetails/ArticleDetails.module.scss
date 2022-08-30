@@ -1,0 +1,50 @@
+@use 'styles/spacings';
+
+.articleDetails {
+  padding: spacings.$spacing-m;
+  overflow: auto;
+  box-sizing: border-box;
+  overflow-y: auto;
+  font-size: 2.4rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: spacings.$spacing-m;
+}
+
+.descriptionWrapper {
+  display: flex;
+}
+
+.description {
+  font-size: 2.4rem;
+  margin-left: spacings.$spacing-m;
+}
+
+.image {
+  max-width: 400px;
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content {
+  font-size: 1.6rem;
+  margin-top: spacings.$spacing-m;
+  margin-bottom: spacings.$spacing-s;
+}
+
+.url {
+  font-size: 1.2rem;
+}
+
+.footer {
+  margin-top: spacings.$spacing-m;
+  font-size: 1.2rem;
+}
+
+.separator {
+  margin: 0 spacings.$spacing-s;
+}

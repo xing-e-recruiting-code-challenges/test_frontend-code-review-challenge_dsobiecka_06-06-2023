@@ -1,0 +1,60 @@
+@use 'styles/spacings';
+@use 'styles/colors';
+
+// stylelint-disable-next-line selector-pseudo-class-no-unknown
+:global() {
+    .react-loading-skeleton {
+        margin-bottom: spacings.$spacing-s;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: spacings.$spacing-s;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.listItem {
+    display: flex;
+    width: 90%;
+}
+
+.listItem .leftCol {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: spacings.$spacing-s;
+}
+
+.listItem .image {
+    width: 64px;
+    height: 64px;
+    background-color: colors.$light-gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: spacings.$spacing-s;
+}
+
+.listItem .imageSkeleton {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+}
+
+.listItem .image img {
+    width: 70%;
+    height: 70%;
+}
+
+.listItem .rightCol {
+    flex: 1;
+}
