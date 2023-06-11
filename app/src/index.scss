@@ -1,0 +1,23 @@
+@use 'styles/cssReset';
+@use 'styles/breakpoints';
+
+html {
+  font-size: 10px;
+
+  @media (max-width: breakpoints.$media-m-tablet) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

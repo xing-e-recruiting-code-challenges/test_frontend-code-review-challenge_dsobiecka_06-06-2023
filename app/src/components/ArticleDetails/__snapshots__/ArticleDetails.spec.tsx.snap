@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleDetails should render correctly 1`] = `
+<div>
+  <div
+    class="articleDetails"
+  >
+    <div
+      class="card"
+    >
+      <article>
+        <div
+          class="title h1"
+        >
+          Samsung says fingerprint security fix is coming as early as next week - The Verge
+        </div>
+        <div
+          class="descriptionWrapper"
+        >
+          <img
+            class="image"
+            loading="lazy"
+            src="https://cdn.vox-cdn.com/thumbor/0S8WzgMFefP2HzwqwrSJi35l_0g=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/14843648/akrales_190228_3255_0065.jpg"
+          />
+          <div
+            class="description"
+          >
+            Samsung says that it plans to release a patch for its in-display fingerprint sensors as early as next week. It follows reports that the biometric security method could be compromised by certain screen protectors.
+          </div>
+        </div>
+        <div
+          class="content"
+        >
+          And advises removing silicone screen protecting cases for now
+Photo by Amelia Holowaty Krales / The Verge
+Samsung says that it plans to release a patch for its phones in-display fingerprint sensors as early as next week, after reports emerged that the biome… [+963 chars]
+        </div>
+        <a
+          class="url"
+          href="https://www.theverge.com/2019/10/18/20920522/samsung-galaxy-s10-note-10-fingerprint-recognition-patch-next-week-bug-biometric-security"
+          rel="noopener noreferrer"
+        >
+          Read More
+        </a>
+        <footer
+          class="footer"
+        >
+          <span>
+            Jon Porter
+          </span>
+          <span
+            class="separator"
+          >
+            ⦁
+          </span>
+          <span>
+            Friday, 18 October 2019 at 11:45
+          </span>
+        </footer>
+      </article>
+    </div>
+  </div>
+</div>
+`;

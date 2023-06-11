@@ -1,0 +1,11 @@
+@use 'styles/spacings';
+
+.searchInput {
+  height: 40px;
+  width: 80vw;
+  max-width: 400px;
+  border-radius: 32px;
+  border: 1px solid #c8c8cd;
+  padding: 0 spacings.$spacing-xl;
+  cursor: pointer;
+}

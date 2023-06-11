@@ -1,0 +1,21 @@
+@use 'styles/spacings';
+@use 'styles/breakpoints';
+
+.articleList {
+    display: flex;
+    flex-direction: column;
+    gap: spacings.$spacing-s;
+}
+
+.articleListItem {
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.articleListItem:hover {
+    @media (min-width: breakpoints.$media-m-tablet) {
+        &:hover {
+            transform: translateX(40px);
+        }
+      }
+}

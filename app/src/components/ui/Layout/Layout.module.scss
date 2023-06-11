@@ -1,0 +1,35 @@
+@use 'styles/spacings';
+@use 'styles/breakpoints';
+
+.app {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 80px;
+
+  @media (max-width: breakpoints.$media-m-tablet) {
+    height: 60px;
+  }
+}
+
+.main {
+  position: relative;
+  display: flex;
+  height: calc(100% - 160px);
+
+  @media (max-width: breakpoints.$media-m-tablet) {
+    flex-direction: column;
+    height: calc(100% - 120px);
+  }
+}
+
+.footer {
+  height: 80px;
+
+  @media (max-width: breakpoints.$media-m-tablet) {
+    height: 60px;
+  }
+}
